@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "obj": {
+    "warnEnabled": true,
+    "kickEnabled": true,
+    "banEnabled": false,
+    "maxInterval": 8000,
+    "maxDuplicatesInterval": 10000,
+    "warnMessage": "Spam is not allowed somewhere here",
+    "kickMessage": "Please leave our Bar.",
+    "banMessage": "You're not allowed here anymore. Bye :)",
+    "warnThreshold": 7,
+    "kickThreshold": 20,
+    "banThreshold": 9999999,
+    "maxDuplicatesWarning": 4,
+    "maxDuplicatesKick": 10,
+    "maxDuplicatesBan": 30,
+    "debug": true
+  }
+}

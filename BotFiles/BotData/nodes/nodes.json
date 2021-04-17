@@ -1,0 +1,1445 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "x": 148,
+      "y": 188
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5053a44d-4a5e-460a-974d-da0cc07aac7c"
+          ]
+        }
+      ],
+      "x": 149,
+      "y": 325
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "m!help",
+          "value": "Shows help",
+          "inline": "true"
+        },
+        {
+          "name": "m!info",
+          "value": "About us",
+          "inline": "true"
+        },
+        {
+          "name": "m!getwindows",
+          "value": "Windows 10 download page",
+          "inline": "true"
+        },
+        {
+          "name": "m!winlicense",
+          "value": "Get Windows 10 license",
+          "inline": "true"
+        },
+        {
+          "name": "m!softwarehelp",
+          "value": "Software troubleshooting",
+          "inline": "true"
+        },
+        {
+          "name": "m!hardwarehelp",
+          "value": "Hardware troubleshooting",
+          "inline": "true"
+        },
+        {
+          "name": "m!iloveiOS",
+          "value": "For all iOS users",
+          "inline": "true"
+        },
+        {
+          "name": "m!whoami",
+          "value": "Who are you?",
+          "inline": "true"
+        },
+        {
+          "name": "m!whois @username",
+          "value": "Who is @username?",
+          "inline": "true"
+        },
+        {
+          "name": "m!wa",
+          "value": "Bot checker",
+          "inline": "true"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 343,
+      "y": 182,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF8A8A",
+        "Help",
+        "",
+        "Microsoft Tech Support",
+        "",
+        "",
+        "Providing best Tech Support for all Microsoft users. Best love from India.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "show info",
+      "guid": "5053a44d-4a5e-460a-974d-da0cc07aac7c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
+        }
+      ],
+      "x": 359,
+      "y": 324,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.DefaultChannel.id}",
+        "Best MS help provider, spyware, malware, logger.\nTech support phone number: +8 800 555 3535\n\n*In development*",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "diagnostics",
+      "guid": "ff581854-750e-4b5e-9c32-31b580d4e63d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "90a39579-8b8f-4fa2-ace8-5dfecdbef840"
+          ]
+        }
+      ],
+      "x": 137,
+      "y": 471
+    },
+    {
+      "type": "response",
+      "name": "Diagnostics intro",
+      "guid": "90a39579-8b8f-4fa2-ace8-5dfecdbef840",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c62c9042-61be-46f8-aba9-bf3ebb1b0c7c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ff581854-750e-4b5e-9c32-31b580d4e63d"
+        }
+      ],
+      "x": 355,
+      "y": 448,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Before diagnostic starts you must accept TOS and Privacy Policy. Use the reaction added to this message.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "accept",
+      "guid": "c62c9042-61be-46f8-aba9-bf3ebb1b0c7c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "90a39579-8b8f-4fa2-ace8-5dfecdbef840"
+        }
+      ],
+      "x": 568,
+      "y": 452,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "I accept TOS and Privacy Policy",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "purr",
+      "guid": "13ec5760-8977-4b61-8fd0-ce1e055fb9d4",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "bfbc3e9a-fbbd-4e0c-8a7c-8ab8ab4fc5ad"
+          ]
+        }
+      ],
+      "x": 64,
+      "y": 790,
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "how many?",
+      "guid": "bfbc3e9a-fbbd-4e0c-8a7c-8ab8ab4fc5ad",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "this many",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7cce1ed4-704f-4b80-815b-9e94aafab140"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "13ec5760-8977-4b61-8fd0-ce1e055fb9d4"
+        }
+      ],
+      "x": 267,
+      "y": 782,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "this many",
+        "Number",
+        "temp",
+        "1"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "fatal",
+      "guid": "7cce1ed4-704f-4b80-815b-9e94aafab140",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "aa87eb62-5207-4755-a51d-07d6726ee604"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bfbc3e9a-fbbd-4e0c-8a7c-8ab8ab4fc5ad"
+        }
+      ],
+      "x": 488,
+      "y": 810,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "${tempVars.this many}"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "Oh wait",
+      "guid": "aa87eb62-5207-4755-a51d-07d6726ee604",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7cce1ed4-704f-4b80-815b-9e94aafab140"
+        }
+      ],
+      "x": 692,
+      "y": 796,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "W8 w8 w8, what was that???",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kick",
+      "guid": "b2a7608b-69ab-467b-b01c-d34ff62bae91",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "db451b65-828e-4e43-b395-1c724034b97b"
+          ]
+        }
+      ],
+      "x": 24,
+      "y": 959,
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "kickuser",
+      "guid": "7321003a-0457-4c5b-bbbc-f52a67ed85c8",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f44ccaca-29c1-42c8-b9cd-609c6656babb"
+        }
+      ],
+      "x": 703,
+      "y": 979,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "${tempVars.user2kick.id}",
+        "Unfortunate${tempVars.kickreason}"
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "whichuser",
+      "guid": "db451b65-828e-4e43-b395-1c724034b97b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f44ccaca-29c1-42c8-b9cd-609c6656babb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b2a7608b-69ab-467b-b01c-d34ff62bae91"
+        }
+      ],
+      "x": 224,
+      "y": 973,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "user2kick",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "reason",
+      "guid": "f44ccaca-29c1-42c8-b9cd-609c6656babb",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "kickreason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7321003a-0457-4c5b-bbbc-f52a67ed85c8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "db451b65-828e-4e43-b395-1c724034b97b"
+        }
+      ],
+      "x": 448,
+      "y": 993,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "kickreason",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "sowwy",
+      "guid": "35994eac-a442-4f6b-a0cf-e676377df4d1",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "368c497a-384b-40d0-8481-f8efe2b6c17f"
+        }
+      ],
+      "x": 326,
+      "y": 64,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Sleepy weepy :fax: <@${dbsVars.CommandAuthor.id}>",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "wa",
+      "guid": "368c497a-384b-40d0-8481-f8efe2b6c17f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "35994eac-a442-4f6b-a0cf-e676377df4d1"
+          ]
+        }
+      ],
+      "x": 156,
+      "y": 74
+    },
+    {
+      "type": "command",
+      "name": "ban",
+      "guid": "6343d1ab-0731-4d47-9262-72420456c0b4",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "30dff802-b3d1-4d1b-a573-0cf16e653947"
+          ]
+        }
+      ],
+      "x": 60,
+      "y": 1109,
+      "perms": [
+        "stripperin",
+        "femboy lazure 20 supremacy"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "whichuser_1",
+      "guid": "30dff802-b3d1-4d1b-a573-0cf16e653947",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3951521e-171a-4fb0-adbc-6c2cf4f5e4b4"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6343d1ab-0731-4d47-9262-72420456c0b4"
+        }
+      ],
+      "x": 246,
+      "y": 1119,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "user2ban",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "reason_1",
+      "guid": "747dfccf-c36c-414f-8fbf-92e2f309fad3",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "banreason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f5f6d328-a7f8-4701-ac80-699a5ef1d321"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3951521e-171a-4fb0-adbc-6c2cf4f5e4b4"
+        }
+      ],
+      "x": 648,
+      "y": 1135,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "banreason",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "bann",
+      "guid": "f5f6d328-a7f8-4701-ac80-699a5ef1d321",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "747dfccf-c36c-414f-8fbf-92e2f309fad3"
+        }
+      ],
+      "x": 832,
+      "y": 1143,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "formdata": [
+        "${tempVars.user2ban.id}",
+        "${tempVars.banreason}",
+        ""
+      ],
+      "formnames": [
+        "user",
+        "reason",
+        "days"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "days",
+      "guid": "3951521e-171a-4fb0-adbc-6c2cf4f5e4b4",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "daysban",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "747dfccf-c36c-414f-8fbf-92e2f309fad3"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "30dff802-b3d1-4d1b-a573-0cf16e653947"
+        }
+      ],
+      "x": 434,
+      "y": 1131,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "daysban",
+        "Number",
+        "temp",
+        "2"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "st",
+      "guid": "2e880c18-63a0-4c09-97ad-81174d8d1aeb",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "d69860d5-2b75-45b6-bead-9dcccec4ba50"
+          ]
+        }
+      ],
+      "x": 99,
+      "y": 610,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "activity",
+      "guid": "d69860d5-2b75-45b6-bead-9dcccec4ba50",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2e880c18-63a0-4c09-97ad-81174d8d1aeb"
+        }
+      ],
+      "x": 312,
+      "y": 601,
+      "rtype": "Bot Action",
+      "rsubtype": "Set Bot Activity",
+      "formdata": [
+        "your PC and solving issues. For further investigations please type m!help",
+        "WATCHING",
+        ""
+      ],
+      "formnames": [
+        "activityname",
+        "activitytype",
+        "streamurl"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "panel menu",
+      "guid": "13e9b2c7-35ff-4710-b15c-708e46257a17",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "m!kick",
+          "value": "Getcha outta here.",
+          "inline": "true"
+        },
+        {
+          "name": "m!ban",
+          "value": "Aufwiedersehen",
+          "inline": "true"
+        },
+        {
+          "name": "m!purr",
+          "value": "Wipe ur ass right now!",
+          "inline": "true"
+        },
+        {
+          "name": "m!diagnostics",
+          "value": "in development",
+          "inline": "true"
+        },
+        {
+          "name": "m!st",
+          "value": "Start bot status if not available",
+          "inline": "true"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "44a504af-e23c-4056-89b3-9f2e6744342c"
+        }
+      ],
+      "x": 695,
+      "y": 640,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Admin Panel",
+        "",
+        "Microsoft Tech Support",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "time to change smth",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "panel",
+      "guid": "44a504af-e23c-4056-89b3-9f2e6744342c",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "13e9b2c7-35ff-4710-b15c-708e46257a17"
+          ]
+        }
+      ],
+      "x": 473,
+      "y": 653,
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "whoami",
+      "guid": "58e08ead-7379-4a14-81b7-ec800852d8d7",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4f8080c0-27e6-487a-bed9-b561da8220ea"
+          ]
+        }
+      ],
+      "x": 70,
+      "y": 1250
+    },
+    {
+      "type": "response",
+      "name": "data",
+      "guid": "4f8080c0-27e6-487a-bed9-b561da8220ea",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "UserXP",
+      "saveToVariableType": "server",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "9d3bbcca-923e-495a-801d-771322acc812"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "58e08ead-7379-4a14-81b7-ec800852d8d7"
+        }
+      ],
+      "x": 249,
+      "y": 1250,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "xp",
+        "UserXP",
+        "server",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "Infoo",
+      "guid": "9d3bbcca-923e-495a-801d-771322acc812",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4f8080c0-27e6-487a-bed9-b561da8220ea"
+        }
+      ],
+      "x": 434,
+      "y": 1255,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "0FFF6F",
+        "Some info i found: ",
+        "",
+        "Microsoft Tech Support",
+        "",
+        "",
+        "Name: ${dbsVars.CommandAuthor.user.tag}\nNickname: ${dbsVars.CommandAuthor.nickname}\nMessages sent: ${serverVars.UserXP}",
+        "",
+        "${dbsVars.CommandAuthor.user.avatarURL}",
+        "so that's who u are",
+        "BOOL_TRUE@@",
+        "",
+        "server"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "winlicense",
+      "guid": "99b935fd-07a4-402d-b181-0ed510d747ed",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "789edb7a-7670-4bfd-ab63-35dbd75781a9"
+          ]
+        }
+      ],
+      "x": 42,
+      "y": 1456
+    },
+    {
+      "type": "command",
+      "name": "getwindows",
+      "guid": "16db981e-61d2-4696-aa63-7bd486736d1a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4cd75f87-7a71-48a3-be35-cd6d9087b8fc"
+          ]
+        }
+      ],
+      "x": 45,
+      "y": 1362
+    },
+    {
+      "type": "response",
+      "name": "windus",
+      "guid": "789edb7a-7670-4bfd-ab63-35dbd75781a9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "99b935fd-07a4-402d-b181-0ed510d747ed"
+        }
+      ],
+      "x": 276,
+      "y": 1362,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Imagine using windows, don't be a clown, use linux or buy a mac. Even we don't like Windows 10",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "getwin",
+      "guid": "4cd75f87-7a71-48a3-be35-cd6d9087b8fc",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "16db981e-61d2-4696-aa63-7bd486736d1a"
+        }
+      ],
+      "x": 276,
+      "y": 1476,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Here's download page: https://www.linux.org/pages/download/",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "iloveiOS",
+      "guid": "81fb47ab-1310-4eac-a008-65a32be3bf51",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "99127f7f-8f6c-44ab-8a12-dbdc3099fe43"
+          ]
+        }
+      ],
+      "x": 44,
+      "y": 1543
+    },
+    {
+      "type": "response",
+      "name": "da",
+      "guid": "99127f7f-8f6c-44ab-8a12-dbdc3099fe43",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a9b2909c-8c8f-4dac-a8d1-e361cb8ed1c2"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "81fb47ab-1310-4eac-a008-65a32be3bf51"
+        }
+      ],
+      "x": 437,
+      "y": 1369,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        "meh"
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "what a faggot",
+      "guid": "a9b2909c-8c8f-4dac-a8d1-e361cb8ed1c2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "99127f7f-8f6c-44ab-8a12-dbdc3099fe43"
+        }
+      ],
+      "x": 619,
+      "y": 1252,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "What a fag",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "hardwarehelp",
+      "guid": "6c7b66bf-8cb6-4a3a-b9b3-5004bbaa4f7e",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "1969bc70-6ac4-424b-810b-cd97ed846d16"
+          ]
+        }
+      ],
+      "x": 28,
+      "y": 1695
+    },
+    {
+      "type": "command",
+      "name": "softwarehelp",
+      "guid": "efedb9b2-0a26-44c7-800d-9f4ead93ccec",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "403a4c8c-3254-4433-856b-f237d3b6a1a6"
+          ]
+        }
+      ],
+      "x": 31,
+      "y": 1789
+    },
+    {
+      "type": "response",
+      "name": "hardware",
+      "guid": "1969bc70-6ac4-424b-810b-cd97ed846d16",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6c7b66bf-8cb6-4a3a-b9b3-5004bbaa4f7e"
+        }
+      ],
+      "x": 257,
+      "y": 1640,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Do we look like ASP? ",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "software",
+      "guid": "403a4c8c-3254-4433-856b-f237d3b6a1a6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "efedb9b2-0a26-44c7-800d-9f4ead93ccec"
+        }
+      ],
+      "x": 243,
+      "y": 1773,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "69FFFF",
+        "Software troubleshooting",
+        "",
+        "Microsoft Tech Support",
+        "",
+        "",
+        "Since we're not clowns, we don't provide support for non Windows OS. If you have troubles with you MS Windows 10 here's small guide:\n\n1. Find a usb stick that's has at least 8GB of storage.\n2. Download the latest OS build. To get the link please reply with *m!getwindows*  .\n3. Make a bootable usb using rufus: http://rufus.ie/\n4. Install new OS and don't forget to rate our support ;)",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "whois",
+      "guid": "03caf175-7691-4756-ab56-023e57e94a89",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "16e8c742-a32b-4ba2-9547-490f4f096e03"
+          ]
+        }
+      ],
+      "x": 449,
+      "y": 1495
+    },
+    {
+      "type": "response",
+      "name": "whosmentioned",
+      "guid": "16e8c742-a32b-4ba2-9547-490f4f096e03",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5462b7c3-781c-401c-83fd-13696eabf85d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "03caf175-7691-4756-ab56-023e57e94a89"
+        }
+      ],
+      "x": 619,
+      "y": 1370,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "whosmentioned",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "data_1",
+      "guid": "5462b7c3-781c-401c-83fd-13696eabf85d",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "UserXP",
+      "saveToVariableType": "server",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "04947a30-a2a2-45da-a7d1-b5a3593412a0"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "16e8c742-a32b-4ba2-9547-490f4f096e03"
+        }
+      ],
+      "x": 783,
+      "y": 1259,
+      "rtype": "User Data",
+      "rsubtype": "Get User Data",
+      "formdata": [
+        "${tempVars.whosmentioned.id}",
+        "xp",
+        "UserXP",
+        "server",
+        "User"
+      ],
+      "formnames": [
+        "user",
+        "field",
+        "varname",
+        "saveVarType",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "Infoo_1",
+      "guid": "04947a30-a2a2-45da-a7d1-b5a3593412a0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5462b7c3-781c-401c-83fd-13696eabf85d"
+        }
+      ],
+      "x": 784,
+      "y": 1377,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "0FFF6F",
+        "Some info i found: ",
+        "",
+        "Microsoft Tech Support",
+        "",
+        "",
+        "Name: ${tempVars.whosmentioned.user.tag}\nNickname: ${tempVars.whosmentioned.displayName}\nMessages sent: ${serverVars.UserXP}",
+        "",
+        "${tempVars.whosmentioned.user.avatarURL}",
+        "so that's who he/she is",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    }
+  ]
+}

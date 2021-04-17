@@ -1,0 +1,476 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "m!help",
+              "value": "Shows help",
+              "inline": "true"
+            },
+            {
+              "name": "m!info",
+              "value": "About us",
+              "inline": "true"
+            },
+            {
+              "name": "m!getwindows",
+              "value": "Windows 10 download page",
+              "inline": "true"
+            },
+            {
+              "name": "m!winlicense",
+              "value": "Get Windows 10 license",
+              "inline": "true"
+            },
+            {
+              "name": "m!softwarehelp",
+              "value": "Software troubleshooting",
+              "inline": "true"
+            },
+            {
+              "name": "m!hardwarehelp",
+              "value": "Hardware troubleshooting",
+              "inline": "true"
+            },
+            {
+              "name": "m!iloveiOS",
+              "value": "For all iOS users",
+              "inline": "true"
+            },
+            {
+              "name": "m!whoami",
+              "value": "Who are you?",
+              "inline": "true"
+            },
+            {
+              "name": "m!whois @username",
+              "value": "Who is @username?",
+              "inline": "true"
+            },
+            {
+              "name": "m!wa",
+              "value": "Bot checker",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF8A8A",
+          "title": "Help",
+          "url": "",
+          "authorname": "Microsoft Tech Support",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Providing best Tech Support for all Microsoft users. Best love from India.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": [
+        {
+          "name": "show info",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.DefaultChannel.id}",
+          "messagetext": "Best MS help provider, spyware, malware, logger.\nTech support phone number: +8 800 555 3535\n\n*In development*",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "diagnostics",
+      "actions": [
+        {
+          "name": "Diagnostics intro",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "Before diagnostic starts you must accept TOS and Privacy Policy. Use the reaction added to this message.",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "accept",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "I accept TOS and Privacy Policy",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "purr",
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ],
+      "actions": [
+        {
+          "name": "how many?",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "this many",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "fatal",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.this many}"
+        },
+        {
+          "name": "Oh wait",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "W8 w8 w8, what was that???",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ],
+      "actions": [
+        {
+          "name": "whichuser",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "varname": "user2kick",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "reason",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "kickreason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "kickuser",
+          "category": "User Action",
+          "type": "Kick User",
+          "user": "${tempVars.user2kick.id}",
+          "reason": "Unfortunate${tempVars.kickreason}"
+        }
+      ]
+    },
+    {
+      "name": "wa",
+      "actions": [
+        {
+          "name": "sowwy",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "Sleepy weepy :fax: <@${dbsVars.CommandAuthor.id}>",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "perms": [
+        "stripperin",
+        "femboy lazure 20 supremacy"
+      ],
+      "actions": [
+        {
+          "name": "whichuser_1",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "varname": "user2ban",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "days",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "daysban",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "2"
+        },
+        {
+          "name": "reason_1",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "varname": "banreason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "0"
+        },
+        {
+          "name": "bann",
+          "category": "User Action",
+          "type": "Ban User",
+          "user": "${tempVars.user2ban.id}",
+          "reason": "${tempVars.banreason}",
+          "days": ""
+        }
+      ]
+    },
+    {
+      "name": "st",
+      "perms": [],
+      "actions": [
+        {
+          "name": "activity",
+          "category": "Bot Action",
+          "type": "Set Bot Activity",
+          "activityname": "your PC and solving issues. For further investigations please type m!help",
+          "activitytype": "WATCHING",
+          "streamurl": ""
+        }
+      ]
+    },
+    {
+      "name": "panel",
+      "perms": [
+        "stripperin",
+        "leiter der kolchose",
+        "femboy lazure 20 supremacy"
+      ],
+      "actions": [
+        {
+          "name": "panel menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "m!kick",
+              "value": "Getcha outta here.",
+              "inline": "true"
+            },
+            {
+              "name": "m!ban",
+              "value": "Aufwiedersehen",
+              "inline": "true"
+            },
+            {
+              "name": "m!purr",
+              "value": "Wipe ur ass right now!",
+              "inline": "true"
+            },
+            {
+              "name": "m!diagnostics",
+              "value": "in development",
+              "inline": "true"
+            },
+            {
+              "name": "m!st",
+              "value": "Start bot status if not available",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF0000",
+          "title": "Admin Panel",
+          "url": "",
+          "authorname": "Microsoft Tech Support",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "footer": "time to change smth",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "whoami",
+      "actions": [
+        {
+          "name": "data",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "field": "xp",
+          "varname": "UserXP",
+          "savevartype": "server",
+          "vartype": "User"
+        },
+        {
+          "name": "Infoo",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "0FFF6F",
+          "title": "Some info i found: ",
+          "url": "",
+          "authorname": "Microsoft Tech Support",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Name: ${dbsVars.CommandAuthor.user.tag}\nNickname: ${dbsVars.CommandAuthor.nickname}\nMessages sent: ${serverVars.UserXP}",
+          "thumbnail": "",
+          "image": "${dbsVars.CommandAuthor.user.avatarURL}",
+          "footer": "so that's who u are",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "server"
+        }
+      ]
+    },
+    {
+      "name": "winlicense",
+      "actions": [
+        {
+          "name": "windus",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "Imagine using windows, don't be a clown, use linux or buy a mac. Even we don't like Windows 10",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "getwindows",
+      "actions": [
+        {
+          "name": "getwin",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "Here's download page: https://www.linux.org/pages/download/",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "iloveiOS",
+      "actions": [
+        {
+          "name": "da",
+          "category": "User Action",
+          "type": "Kick User",
+          "user": "${dbsVars.CommandAuthor.id}",
+          "reason": "meh"
+        },
+        {
+          "name": "what a faggot",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "What a fag",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "hardwarehelp",
+      "actions": [
+        {
+          "name": "hardware",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "messagetext": "Do we look like ASP? ",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "softwarehelp",
+      "actions": [
+        {
+          "name": "software",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "69FFFF",
+          "title": "Software troubleshooting",
+          "url": "",
+          "authorname": "Microsoft Tech Support",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Since we're not clowns, we don't provide support for non Windows OS. If you have troubles with you MS Windows 10 here's small guide:\n\n1. Find a usb stick that's has at least 8GB of storage.\n2. Download the latest OS build. To get the link please reply with *m!getwindows*  .\n3. Make a bootable usb using rufus: http://rufus.ie/\n4. Install new OS and don't forget to rate our support ;)",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "whois",
+      "actions": [
+        {
+          "name": "whosmentioned",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "varname": "whosmentioned",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "data_1",
+          "category": "User Data",
+          "type": "Get User Data",
+          "user": "${tempVars.whosmentioned.id}",
+          "field": "xp",
+          "varname": "UserXP",
+          "savevartype": "server",
+          "vartype": "User"
+        },
+        {
+          "name": "Infoo_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "0FFF6F",
+          "title": "Some info i found: ",
+          "url": "",
+          "authorname": "Microsoft Tech Support",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Name: ${tempVars.whosmentioned.user.tag}\nNickname: ${tempVars.whosmentioned.displayName}\nMessages sent: ${serverVars.UserXP}",
+          "thumbnail": "",
+          "image": "${tempVars.whosmentioned.user.avatarURL}",
+          "footer": "so that's who he/she is",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}
